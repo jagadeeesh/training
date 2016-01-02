@@ -1,16 +1,17 @@
 def random_no
-	rand(10).to_i
+	rand(10)
 end
-@ans = gets
- orig = random_no
+
+orig = random_no
 while true
     puts "enter number "
-	if @ans == orig.to_i
+    ans = gets.to_i
+	if ans == orig.to_i
 		puts "correct"
-		puts "press Cntrl+c to stop execution"
-	elsif @ans > orig.to_i
+		break
+	elsif ans > orig.to_i
 		puts "high"
-	elsif @ans < orig.to_i
+	elsif ans < orig.to_i
 		puts "low"
 	end
 end

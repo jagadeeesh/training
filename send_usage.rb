@@ -9,7 +9,7 @@ SendUsage.new("*",arr)
 
 
 
-obj = Array.new([2,3,4])
+obj = [1,2,3,4]
 def obj.foldl(op)
 	inject{|r,i| r ? r.send(op,i) : i}
 end
